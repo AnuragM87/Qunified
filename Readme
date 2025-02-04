@@ -1,0 +1,37 @@
+A Unified Quantum Computing Simulator
+Vision
+Quantum computing has seen exponential growth, with multiple frameworks such as Qiskit(IBM), Cirq(google), and pennylane(blackbird-Xanadu) leading the way. However, a significant challenge remains: the fragmentation of tools makes it difficult for researchers and developers to work seamlessly across different platforms. QuantumFlow aims to bridge this gap by providing an intuitive, drag-and-drop interface for quantum circuit design, measurement, and visualization. This open-source project will foster collaboration, enable a unified approach to quantum computing, and support fundamental tasks.
+
+
+
+Initial stage:
+First we try build simpler application that can do basic thing eg: singleQubitTomography, Visualization , normalization etc, 
+Continued …
+Second Stage:
+Utilising different lib of respective quantum computer and simulate the circuit
+Continued …
+
+Third Stage : 
+Connecting all real quantum computing 
+Continued …
+
+🚀 Join the QuantumFlow Open-Source Project! 🚀
+Are you passionate about quantum computing and open-source development? We are building QuantumFlow, a unified quantum simulator that connects Qiskit, Cirq, and Xanadu with an intuitive drag-and-drop interface for quantum circuit design, measurement, and tomography.
+How You Can Contribute
+🔹 Coders & Developers – Help build the core application, integrate quantum frameworks, and develop the UI.
+ 🔹 Quantum Physicists – Guide the mathematical foundations, suggest new algorithms, and refine tomography techniques.
+ 🔹 Idea Contributors & Enthusiasts – Share insights on features, usability, and quantum applications.
+ 🔹 Community Builders – Help grow an open-source community around QuantumFlow.
+Why Join?
+✅ Collaborate with like-minded quantum enthusiasts.
+ ✅ Build a powerful open-source tool for the quantum community.
+ ✅ Gain hands-on experience in quantum programming, UI/UX, and research.
+Google form just to mark your presence : 
+https://docs.google.com/forms/d/1OcTlfxD3pICMVCyu3lIrnG6342LSmVeErW_vtBvBqqE/edit 
+
+
+
+
+
+
+
