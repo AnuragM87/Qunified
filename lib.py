@@ -173,24 +173,3 @@ class SingleQubitTomography:
                             [0, -1]])
         expectation = np.trace(np.dot(self.get_rho(), sigma_z))
         return np.real(expectation)
-    
-
-class Normalization:
-    def __init__(self,vector=None):
-        self.vector=vector
-        vector=self.enterVector()
-
-
-    def enterVector(self):
-        print("Enter the values for the vector")
-        vector=np.array(float(x) for x in input().split())
-        return vector
-    
-    def normalize(self, vector):
-        return vector / np.linalg.norm()
-    
-
-class StateCheck:
-    def __init__(self):
-        pass:
-        
