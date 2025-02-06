@@ -12,16 +12,16 @@ class SingleQubitTomography(QWidget):
         self.setGeometry(100, 100, 400, 400)
 
         # Labels and Inputs
-        self.label_Nh = QLabel("Nh:")
+        self.label_Nh = QLabel("No. of H-polarized Photons:")
         self.input_Nh = QLineEdit()
 
-        self.label_Nv = QLabel("Nv:")
+        self.label_Nv = QLabel("No. of V-polarized Photons:")
         self.input_Nv = QLineEdit()
 
-        self.label_Nl = QLabel("Nl:")
+        self.label_Nl = QLabel("No. of L-polarized Photons:")
         self.input_Nl = QLineEdit()
 
-        self.label_Nd = QLabel("Nd:")
+        self.label_Nd = QLabel("No. of D-polarized Photons:")
         self.input_Nd = QLineEdit()
 
         # Compute Button
