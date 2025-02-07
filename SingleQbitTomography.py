@@ -63,9 +63,9 @@ class SingleQubitTomography(QWidget):
 
             # Compute Stokes Vector
             S0 = 1
-            S1 = 2 * Ph - 1
+            S3 = 2 * Ph - 1
             S2 = 2 * Pl - 1
-            S3 = 2 * Pd - 1
+            S1 = 2 * Pd - 1
 
             # Compute Density Matrix
             rho = 0.5 * np.array([
