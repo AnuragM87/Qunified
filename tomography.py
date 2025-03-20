@@ -1,10 +1,12 @@
-import sys
 import numpy as np
-from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout, QTextEdit
+from PyQt6.QtWidgets import QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout, QTextEdit
+
 
 class SingleQubitTomography(QWidget):
-    def __init__(self):
+    """Quantum Tomography Section."""
+    def __init__(self, stacked_widget):
         super().__init__()
+        self.stacked_widget = stacked_widget
         self.initUI()
 
     def initUI(self):
@@ -32,6 +34,10 @@ class SingleQubitTomography(QWidget):
         self.output_field = QTextEdit()
         self.output_field.setReadOnly(True)
 
+        # Back Button
+        self.back_button = QPushButton("Back to Main Menu")
+        self.back_button.clicked.connect(lambda: self.stacked_widget.setCurrentIndex(0))
+
         # Layout
         layout = QVBoxLayout()
         layout.addWidget(self.label_Nh)
@@ -44,6 +50,7 @@ class SingleQubitTomography(QWidget):
         layout.addWidget(self.input_Nd)
         layout.addWidget(self.compute_button)
         layout.addWidget(self.output_field)
+        layout.addWidget(self.back_button)
 
         self.setLayout(layout)
 
@@ -92,9 +99,3 @@ class SingleQubitTomography(QWidget):
 
         except ValueError:
             self.output_field.setText("Please enter valid integers for Nh, Nv, Nl, and Nd.")
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    window = SingleQubitTomography()
-    window.show()
-    sys.exit(app.exec())
